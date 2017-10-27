@@ -58,10 +58,6 @@ figure {
 
 .site-nav {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
   z-index: 100;
   background-color: #ffffff;
 }
@@ -194,4 +190,31 @@ figure {
 
 .about > p {
   margin: 0;
+}
+
+/* Media Queries */
+
+@media screen and ( max-width: 767px ) {
+  .site-nav {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+}
+
+@media screen and ( min-width: 768px ) {
+  nav.site-nav {
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+  }
+
+  .site-nav-item {
+    float: none;
+    width: 100%;
+  }
+
 }
