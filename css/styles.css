@@ -58,6 +58,9 @@ figure {
 
 .site-nav {
   position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
   background-color: #ffffff;
 }
@@ -194,7 +197,7 @@ figure {
 
 /* Media Queries */
 
-@media screen and ( max-width: 767px ) {
+/*@media screen and ( max-width: 767px ) {
   .site-nav {
     bottom: 0;
     left: 0;
@@ -202,19 +205,39 @@ figure {
     width: 100%;
   }
 
-}
+}*/
 
 @media screen and ( min-width: 768px ) {
-  nav.site-nav {
+
+  .site-nav {
     top: 0;
     left: 0;
     bottom: 0;
+    width: 80px;
+    margin-right:80px;
+    padding-top: 7rem;
 
   }
 
   .site-nav-item {
     float: none;
     width: 100%;
+  }
+
+  main {
+    padding-left: 80px;
+  }
+
+
+  .site-logo {
+    z-index: 500;
+    left: 0;
+    margin-bottom: 1rem;
+    padding: 10px;
+  }
+
+  .movie-overview {
+    display: inline-block;
   }
 
 }
