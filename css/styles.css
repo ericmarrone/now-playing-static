@@ -209,6 +209,9 @@ figure {
 
 @media screen and ( min-width: 768px ) {
 
+  body {
+    padding-bottom: 0;
+  }
   .site-nav {
     top: 0;
     left: 0;
@@ -236,8 +239,26 @@ figure {
     padding: 10px;
   }
 
+  .site-footer {
+    padding:0 0 0 80px;
+    background: black;
+  }
   .movie-overview {
     display: inline-block;
+  }
+
+  .footer-nav, .about {
+    display: inline-table;
+    background: black;
+    color: white;
+    /*padding: 1em;*/
+    width: 47%;
+
+  }
+
+  .footer-nav {
+    position:relative;
+    top: 10px;
   }
 
 }
